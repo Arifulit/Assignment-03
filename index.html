@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rintero</title>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind css & DaisyUI Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(171, 239, 95)",
+              secondary: "black",
+              body: "linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);",
+              accent: "rgb(106, 151, 57)",
+              body_neutral: "rgb(51, 51, 51)",
+              body_light: "rgb(255, 255, 255)",
+               view: "rgba(171, 239, 95, 0.5)",
+            },
+            fontFamily: {
+              manrope: "manrope",
+            },
+            backgroundImage: {
+              leaf1: "url('./images/leaf01.png')",
+              call_to_action: "url('./images/call.jpg')",
+              testimonials: "url('./images/testimonials.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-manrope">
+    <!-- banner section start -->
+    <header class="bg-body">
+      <!-- nav bar section start -->
+      <nav class="navbar w-11/12 mx-auto">
+        <div class="navbar-start text-2xl">
+          <div
+            class="w-[32px] h-[32px] text-center bg-primary rounded-full p-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </div>
+          <a class="text-3xl font-bold" href="#">Rintero</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 flex items-center gap-5 text-lg font-medium"
+          >
+            <li
+              class="hover:text-primary font-bold transition-colors ease-in-out duration-300"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300"
+            >
+              <a href="#">Services</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300"
+            >
+              <a href="#">Portfolio</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300"
+            >
+              <a href="#">Blogs</a>
+            </li>
+            <li
+              class="hover:text-primary transition-colors ease-in-out duration-300"
+            >
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-5 items-center">
+          <div class=" flex gap-5 text-lg">
+            <div
+              class="flex items-center gap-2 font-semibold bg-body_light w-[48px] h-[48px] text-center rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="flex items-center gap-2 font-semibold bg-body_light w-[48px] h-[48px] text-center rounded-full"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </div>
+
+            <div
+              class="flex items-center justify-center gap-2 w-[180px] h-[50px] text-center p-2 gap-2 bg-primary rounded-full"
+            >
+              <h2 class="text-1xl font-bold">Book Consult</h2>
+              <div
+                class="w-[32px] h-[32px] text-center bg-secondary rounded-full text-white p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost lg:hidden bg-primary text-lg"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5"
+            >
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a href="#">Services</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a href="#">Portfolio</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a href="#">Blogs</a>
+              </li>
+              <li
+                class="hover:text-primary transition-colors ease-in-out duration-300"
+              >
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar section end -->
+
+      <!-- banner section start -->
+      <div class="w-11/12 mx-auto flex flex-col items-center justify-center">
+        <div>
+          <img src="./assets/banner.png" alt="" />
+        </div>
+        <div class="flex flex-col">
+          <h1 class="text-6xl font-bold text-center">
+            A barn house of this design has a <br />
+            striking appearance
+          </h1>
+          <p class="text-xl w-2/3 mx-auto text-center my-5">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <div class="flex justify-center">
+          <div
+            class="flex items-center justify-center gap-4 w-[180px] h-[50px] text-center px-1 py-2 gap-2 bg-view rounded-full text-center"
+          >
+            <h1 class="text-1xl font-bold">View Details</h1>
+            <div
+            class="w-[32px] h-[32px] text-center bg-primary rounded-full p-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
