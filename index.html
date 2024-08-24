@@ -44,7 +44,7 @@
               card3: " rgb(164, 218, 195)",
               card4: " rgb(119, 170, 234)",
               footer: "rgb(30, 30, 30)",
-              latest: "rgb(73, 73, 73)",
+              latest: "rgba(171, 239, 95, 0.2)",
             },
             fontFamily: {
               manrope: "manrope",
@@ -62,9 +62,9 @@
   </head>
   <body class="font-manrope">
     <!-- banner section start -->
-    <header class="bg-body">
+    <header class="bg-body container mx-auto">
       <!-- nav bar section start -->
-      <nav class="navbar container mx-auto">
+      <nav class="navbar ">
         <div class="navbar-start text-2xl ">
           <div
             class="w-[32px] h-[32px] text-center bg-primary rounded-full p-1"
@@ -121,7 +121,7 @@
 
           <div class="hidden lg:flex gap-5 text-lg ">
             <div
-              class="flex items-center gap-2 font-semibold bg-body_light w-[48px] h-[48px] text-center rounded-full"
+              class="flex items-center justify-center gap-2 font-semibold bg-body_light w-[48px] h-[48px] border p-1 rounded-full"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -139,17 +139,14 @@
               </svg>
             </div>
 
-            <div
-              class="flex items-center gap-2 font-semibold bg-body_light w-[48px] h-[48px] text-center rounded-full"
-            >
+            <div class="flex  items-center justify-center border gap-2 font-semibold bg-body_light w-[48px] h-[48px] text-center rounded-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
-              >
+                class="size-6" >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -159,8 +156,7 @@
             </div>
 
             <div
-              class="flex items-center justify-center gap-2 w-[180px] h-[50px] text-center p-2 gap-2 bg-primary rounded-full"
-            >
+              class="flex items-center justify-center  w-[180px] h-[50px] text-center p-2 gap-2 bg-primary rounded-full">
               <h2 class="text-1xl font-bold">Book Consult</h2>
               <div
                 class="w-[32px] h-[32px] text-center bg-black rounded-full text-white p-1" >
@@ -270,22 +266,21 @@
     </header>
     <main>
       <!-- design section start -->
-      <div class="bg-commercial container mx-auto mt-20 p-10">
-        <img class="lg:hidden " src="./assets/Vector.png" alt="" />
-        <section class="grid lg:grid-cols-2 items-center gap-10 mx-auto">
-          <div class="w-11/12 lg:ml-auto mx-auto lg:py-0 pt-10">
-            <div>
-              <div
-                class="flex rounded-full bg-white w-[127px] h-[38px] items-center justify-center gap-2"
-              >
-                <div>
+      <div class="bg-commercial container mx-auto mt-20 p-10 w-full">
+        <img class="hidden lg:block" src="./assets/Vector.png" alt="" />
+        <section class="grid lg:grid-cols-2 place-items-center gap-10 mx-auto">
+          <div class="lg:py-0 pt-10">
+            <div class="flex flex-col items-center justify-center">
+      
+              <div class="flex flex-col items-center text-center lg:text-left lg:items-start">
+                <div class="flex items-center justify-center lg:justify-start rounded-full bg-white w-32 h-10 gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="size-6"
+                    class="w-6 h-6"
                   >
                     <path
                       stroke-linecap="round"
@@ -293,55 +288,43 @@
                       d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
                     />
                   </svg>
+                  <h2>About Us</h2>
                 </div>
-                <h2>About Us</h2>
+      
+                <h1 class="text-4xl sm:text-6xl font-bold my-5 sm:my-10">
+                  We design thoughtful, livable spaces
+                </h1>
+                <p class="text-base sm:text-lg leading-8 mb-5 sm:mb-10">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
               </div>
-              <h1 class="sm:text-6xl text-4xl sm:my-10 my-5">
-                We design thoughtful, liveable spaces
-              </h1>
-              <p
-                class="sm:text-lg text-base leading-8 text-justify sm:mb-10 mb-5"
-              >
-                The barn house captivates with its blend of rustic charm and
-                modern sophistication, featuring weathered wood, sleek metal
-                accents.
-              </p>
-
-              <div class="mt-5">
-                <div
-                  class="flex gap-4 bg-white rounded-box w-[555px] h-[136px] p-4 mt-5"
-                >
-                  <img src="./assets/commercial.png" alt="" />
+      
+              <div class="mt-5 space-y-5">
+                <div class="flex items-start gap-4 bg-white rounded-lg w-full p-4">
+                  <img src="./assets/commercial.png" alt="Commercial" class="w-20 h-20">
                   <div>
                     <h1 class="text-2xl font-bold">Commercial</h1>
-                    <p>
-                      The barn house captivates with its blend of rustic charm
-                      and modern.
-                    </p>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
                   </div>
                 </div>
-                <div
-                  class="flex gap-4 bg-white rounded-box w-[555px] h-[136px] p-4 mt-5"
-                >
-                  <img src="./assets/residential.png" alt="" />
+                <div class="flex items-start gap-4 bg-white rounded-lg w-full p-4">
+                  <img src="./assets/residential.png" alt="Residential" class="w-20 h-20">
                   <div>
                     <h1 class="text-2xl font-bold">Residential</h1>
-                    <p>
-                      The barn house captivates with its blend of rustic charm
-                      and modern.
-                    </p>
+                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <img src="./assets/Rectangle.png" alt="" />
+          <img class="h-auto w-full lg:w-auto lg:h-full" src="./assets/Rectangle.png" alt="Design Image" />
         </section>
       </div>
+      
       <!-- design section end -->
 
       <!-- Our Works Section start -->
-      <section class="bg-commercial mt-24 mb-10 p-1 w-full mx-auto">
+      <section class="bg-commercial mt-24 mb-10 p-1  mx-auto">
         <div
           class="py-12 text-center flex flex-col items-center justify-center"
         >
@@ -377,7 +360,7 @@
           class="flex lg:flex-row flex-col justify-center items-center gap-5 mb-20"
         >
           <div
-            class="flex flex-col justify-center bg-card1 rounded-box p-1 w-[275px] h-[220px] gap-2"
+            class="flex  flex-col justify-center bg-card1 rounded-box p-1 w-[275px] h-[220px] gap-2"
           >
             <img class="w-[48px] h-[48px]" src="./assets/concept.png" alt="" />
             <h2 class="text-1xl font-bold">Concept</h2>
@@ -430,9 +413,9 @@
        <!-- Our Latest Section start -->
        <section class="container mx-auto mt-20 p-4">
         <div class="py-12 text-center flex flex-col items-center justify-center">
-          <div
-            class="flex rounded-full bg-latest w-full sm:w-[246px] h-[38px] items-center justify-center gap-2"
-          >
+          
+          <!-- Section Header -->
+          <div class="flex rounded-full bg-latest w-full sm:w-[246px] h-[38px] items-center justify-center gap-2">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -440,47 +423,48 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
+                class="w-6 h-6"
               >
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"
                 />
               </svg>
             </div>
             <h2 class="font-semibold">Explore our Latest works</h2>
           </div>
-          <h3 class="text-2xl sm:text-4xl font-bold mb-3">Our Latest Portfolio</h3>
+          <h3 class="text-2xl sm:text-4xl font-bold mb-3 mt-4">Our Latest Portfolio</h3>
           <p class="opacity-80 w-full sm:w-1/2 px-2 sm:px-0">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
-      
+        
+        <!-- Portfolio Grid -->
+        <!-- Row 1 -->
         <div class="mb-4 grid grid-cols-1 lg:grid-cols-[1.25fr_0.75fr] gap-2">
-          <div class="flex flex-col lg:flex-row gap-2 border rounded-lg p-2">
-            <div class="w-full lg:w-1/2">
-              <img class="w-full h-full object-cover" src="./assets/img1.png" alt="" />
+          
+          <!-- Portfolio Item 1 -->
+          <div class="flex flex-col lg:flex-row gap-10 border rounded-lg p-2">
+            <div class="w-full h-full lg:w-1/2">
+              <img class="w-full h-full object-cover rounded-lg" src="./assets/img1.png" alt="Commercial Project" />
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col justify-evenly">
               <h2 class="text-xl sm:text-2xl font-bold mt-1">Commercial</h2>
-              <p>
-                The barn house captivates with its blend of rustic charm and modern.
-                The barn house captivates with its blend of rustic charm and modern.
+              <p class="mt-4 mb-4">
+                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.
               </p>
               <div class="flex gap-2 text-xl sm:text-2xl mt-2">
                 <a class="font-bold" href="#">View Details</a>
-                <div
-                  class="w-[32px] h-[32px] text-center bg-primary rounded-full p-1"
-                >
+                <div class="w-[32px] h-[32px] text-center bg-primary rounded-full p-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="size-6"
+                    class="w-6 h-6"
                   >
                     <path
                       stroke-linecap="round"
@@ -492,39 +476,41 @@
               </div>
             </div>
           </div>
-      
+          
+          <!-- Portfolio Item 2 -->
           <div class="border rounded-lg p-2">
-            <img class="w-full h-full object-cover" src="./assets/img2.png" alt="" />
+            <img class="w-full h-full object-cover rounded-lg" src="./assets/img2.png" alt="Residential Project" />
           </div>
         </div>
-      
+        
+        <!-- Row 2 -->
         <div class="mb-4 grid grid-cols-1 lg:grid-cols-[0.8fr_1.5fr_0.7fr] gap-2">
+          
+          <!-- Portfolio Item 3 -->
           <div class="border rounded-lg p-2">
-            <img class="w-full h-full object-cover" src="./assets/img3.png" alt="" />
+            <img class="w-full h-full object-cover rounded-lg" src="./assets/img3.png" alt="Interior Design" />
           </div>
-      
-          <div class="flex flex-col lg:flex-row gap-2 border rounded-lg p-2">
+          
+          <!-- Portfolio Item 4 -->
+          <div class="flex flex-col lg:flex-row gap-8 border rounded-lg p-2">
             <div class="w-full lg:w-1/2">
-              <img class="w-full h-full object-cover" src="./assets/img4.png" alt="" />
+              <img class="w-full h-full object-cover rounded-lg" src="./assets/img4.png" alt="Commercial Building" />
             </div>
-            <div class="flex flex-col">
-              <h2 class="text-xl sm:text-2xl font-bold mt-1">Commercial</h2>
-              <p>
-                The barn house captivates with its blend of rustic charm and modern.
-                The barn house captivates with its blend of rustic charm and modern.
+            <div class="flex flex-col lg:w-1/2 justify-evenly">
+              <h2 class="text-xl sm:text-2xl font-bold mt-2 mb-4">Commercial</h2>
+              <p class="mb-4">
+                The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.
               </p>
-              <div class="flex gap-2 text-xl sm:text-2xl mt-2">
+              <div class="flex gap-2 text-xl sm:text-2xl mt-2 mb-4">
                 <a class="font-bold" href="#">View Details</a>
-                <div
-                  class="w-[32px] h-[32px] text-center bg-primary rounded-full p-1"
-                >
+                <div class="w-[32px] h-[32px] text-center bg-primary rounded-full p-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="size-6"
+                    class="w-6 h-6"
                   >
                     <path
                       stroke-linecap="round"
@@ -536,12 +522,14 @@
               </div>
             </div>
           </div>
-      
+          
+          <!-- Portfolio Item 5 -->
           <div class="border rounded-lg p-2">
-            <img class="w-full h-full object-cover" src="./assets/img5.png" alt="" />
+            <img class="w-full h-full object-cover rounded-lg" src="./assets/img5.png" alt="Residential Building" />
           </div>
         </div>
       </section>
+      
       
        <!-- Our Latest Section end -->
       <!-- Form section start -->
@@ -644,19 +632,19 @@
       </section>
     </main>
     <!-- Footer section start -->
-    <footer class="bg-footer  container mx-auto mt-24">
+    <footer class="bg-footer container mx-auto mt-24">
       <div class="py-12 text-center flex flex-col items-center justify-center">
-        <div class="flex text-2xl mb-5 gap-2">
-          <div
-            class="w-[30px] h-[30px] text-center bg-primary rounded-full p-1"
-          >
+        
+        <!-- Logo and Name -->
+        <div class="flex text-2xl mb-5 gap-2 items-center">
+          <div class="w-8 h-8 text-center bg-primary rounded-full p-1 flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -667,36 +655,33 @@
           </div>
           <a class="text-4xl text-white font-bold" href="#">Rintero</a>
         </div>
-
-        <p class="opacity-80 w-1/2 text-white">
+        
+        <!-- Description -->
+        <p class="opacity-80 w-10/12 sm:w-1/2 text-white">
           The barn house captivates with its blend of rustic charm and modern
-          sophistication, featuring weathered wood, sleek metal accents..
+          sophistication, featuring weathered wood, sleek metal accents.
         </p>
-
-        <div
-          class="flex lg:flex-row flex-col gap-10 lg:gap-30 text-white justify-center mt-5"
-        >
-          <div><a href="#">Home</a></div>
-          <div><a href="#">Services</a></div>
-          <div><a href="#">Portfolio</a></div>
-          <div><a href="#">Blogs</a></div>
-          <div><a href="#">Contact Us</a></div>
+    
+        <!-- Navigation Links -->
+        <div class="flex flex-col lg:flex-row gap-5 lg:gap-10 text-white justify-evenly mt-5">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Blogs</a>
+          <a href="#">Contact Us</a>
         </div>
-
-        <div
-          class="flex items-center justify-center gap-2 w-[180px] h-[50px] text-center p-2 gap-2 bg-primary rounded-full mt-10"
-        >
-          <h2 class="text-1xl font-bold">Book Consult</h2>
-          <div
-            class="w-[32px] h-[32px] text-center bg-secondary rounded-full text-white p-1"
-          >
+    
+        <!-- Call to Action Button -->
+        <div class="flex items-center justify-center gap-2 w-full lg:w-48 h-12 text-center p-2 bg-primary rounded-full mt-10">
+          <h2 class="text-lg font-bold">Book Consult</h2>
+          <div class="w-8 h-8 text-center bg-secondary rounded-full text-white flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="w-6 h-6"
             >
               <path
                 stroke-linecap="round"
@@ -708,6 +693,7 @@
         </div>
       </div>
     </footer>
+    
     <!-- footer section end -->
   </body>
 </html>
